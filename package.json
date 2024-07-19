@@ -1,0 +1,24 @@
+{
+  "name": "maudelcreation_wp",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "deploy": "npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
+    "build-autoprefix": "postcss --use autoprefixer --output maudelcreation/style.css maudelcreation/style.css",
+    "build-cleancss": "cleancss -o maudelcreation/style.css maudelcreation/style.css",
+    "build-sass": "sass maudelcreation/sass/style.sass maudelcreation/style.css",
+    "watch": "npm run build-sass -- --watch"
+  },
+  "author": "https://github.com/melvinlemoine",
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "clean-css-cli": "5.6.3",
+    "postcss-cli": "11.0.0",
+    "sass": "1.75.0"
+  },
+  "browserslist": [
+    "last 4 version",
+    "> 0.5%",
+    "not dead"
+  ]
+}
