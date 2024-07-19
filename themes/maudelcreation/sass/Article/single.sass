@@ -1,0 +1,54 @@
+.container-single
+    padding: 20px
+    background-color: #F0E1D1
+    position: relative
+    &__wrapper
+        position: relative
+        overflow: hidden
+        border-radius: 10px
+        &_thumbnail img
+            width: 100%
+            height: auto
+        &_thumbnail::before
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, #F0E1D1 100%)
+            border-radius: 10px
+            pointer-events: none
+
+    &__title
+        font-family: 'varuna', sans-serif
+        font-size: 48px
+        font-weight: bold
+        margin: 20px 0
+        position: absolute
+        top: 15%
+        left: 20%
+        line-height: 60px
+        width: 70%
+        text-align: center
+
+    &__content
+        font-family: 'varuna', sans-serif
+        font-size: 16px
+        line-height: 1.6
+        color: #333
+        position: relative
+        top: 70%
+        margin: 0 2%
+.imgarticle
+    margin-left: 40%
+.stepmacrame 
+    margin: 2%
+    display: flex
+    justify-content: space-around
+    align-items: center
+    height: 100%
+    &__step
+        display: flex
+        flex-direction: column
+        align-items: center
